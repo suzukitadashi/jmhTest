@@ -6,10 +6,12 @@ import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
-public class MyBenchmarkStringLine {
+public class MyBenchmarkStringLineNumber {
 
+	private static String[] list = {"0","1","2","3","4","5","6","7","8", "9"};
+	
 	public static void main(String[] args) throws RunnerException {
-		Options opt = new OptionsBuilder().include(MyBenchmarkStringLine.class.getSimpleName()).warmupIterations(5)
+		Options opt = new OptionsBuilder().include(MyBenchmarkStringLineNumber.class.getSimpleName()).warmupIterations(5)
 				.measurementIterations(5).forks(2).build();
 		new Runner(opt).run();
 

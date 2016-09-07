@@ -1,15 +1,23 @@
 package jmhTest;
 
+import java.util.ArrayList;
+
 import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.Setup;
+import org.openjdk.jmh.annotations.TearDown;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
-public class MyBenchmarkStringLine {
+
+public class MyBenchmarkStringLineZenkaku {
+	
+	private static String[] list = {"あ","い","う","え","お","か","き","く","け", "こ"};
 
 	public static void main(String[] args) throws RunnerException {
-		Options opt = new OptionsBuilder().include(MyBenchmarkStringLine.class.getSimpleName()).warmupIterations(5)
+		
+		Options opt = new OptionsBuilder().include(MyBenchmarkStringLineZenkaku.class.getSimpleName()).warmupIterations(5)
 				.measurementIterations(5).forks(2).build();
 		new Runner(opt).run();
 
@@ -19,6 +27,7 @@ public class MyBenchmarkStringLine {
 
 	@Benchmark
 	public void call1StringLine() {
+		
 		for (int i = 0; i < count; i++) {
 			test1StringLine();
 		}
@@ -48,25 +57,25 @@ public class MyBenchmarkStringLine {
 	public void test1StringLine() {
 
 		int i = 0;
-		String str0 = String.valueOf(i);
+		String str0 = list[i];
 		i++;
-		String str1 = String.valueOf(i);
+		String str1 = list[i];
 		i++;
-		String str2 = String.valueOf(i);
+		String str2 = list[i];
 		i++;
-		String str3 = String.valueOf(i);
+		String str3 = list[i];
 		i++;
-		String str4 = String.valueOf(i);
+		String str4 = list[i];
 		i++;
-		String str5 = String.valueOf(i);
+		String str5 = list[i];
 		i++;
-		String str6 = String.valueOf(i);
+		String str6 = list[i];
 		i++;
-		String str7 = String.valueOf(i);
+		String str7 = list[i];
 		i++;
-		String str8 = String.valueOf(i);
+		String str8 = list[i];
 		i++;
-		String str9 = String.valueOf(i);
+		String str9 = list[i];
 
 		String str = str0 + str1 + str2 + str3 + str4 + str5 + str6 + str7 + str8 + str9;
 
@@ -75,25 +84,25 @@ public class MyBenchmarkStringLine {
 	public void test2StringConcat() {
 
 		int i = 0;
-		String str0 = String.valueOf(i);
+		String str0 = list[i];
 		i++;
-		String str1 = String.valueOf(i);
+		String str1 = list[i];
 		i++;
-		String str2 = String.valueOf(i);
+		String str2 = list[i];
 		i++;
-		String str3 = String.valueOf(i);
+		String str3 = list[i];
 		i++;
-		String str4 = String.valueOf(i);
+		String str4 = list[i];
 		i++;
-		String str5 = String.valueOf(i);
+		String str5 = list[i];
 		i++;
-		String str6 = String.valueOf(i);
+		String str6 = list[i];
 		i++;
-		String str7 = String.valueOf(i);
+		String str7 = list[i];
 		i++;
-		String str8 = String.valueOf(i);
+		String str8 = list[i];
 		i++;
-		String str9 = String.valueOf(i);
+		String str9 = list[i];
 
 		String str = str0.concat(str1).concat(str2).concat(str3).concat(str4).concat(str5).concat(str6).concat(str7)
 				.concat(str8).concat(str9);
@@ -103,25 +112,25 @@ public class MyBenchmarkStringLine {
 	public void test3StringBuffer() {
 
 		int i = 0;
-		String str0 = String.valueOf(i);
+		String str0 = list[i];
 		i++;
-		String str1 = String.valueOf(i);
+		String str1 = list[i];
 		i++;
-		String str2 = String.valueOf(i);
+		String str2 = list[i];
 		i++;
-		String str3 = String.valueOf(i);
+		String str3 = list[i];
 		i++;
-		String str4 = String.valueOf(i);
+		String str4 = list[i];
 		i++;
-		String str5 = String.valueOf(i);
+		String str5 = list[i];
 		i++;
-		String str6 = String.valueOf(i);
+		String str6 = list[i];
 		i++;
-		String str7 = String.valueOf(i);
+		String str7 = list[i];
 		i++;
-		String str8 = String.valueOf(i);
+		String str8 = list[i];
 		i++;
-		String str9 = String.valueOf(i);
+		String str9 = list[i];
 
 		StringBuffer bf = new StringBuffer();
 
@@ -135,30 +144,32 @@ public class MyBenchmarkStringLine {
 	public void test4StringBuilder() {
 
 		int i = 0;
-		String str0 = String.valueOf(i);
+		String str0 = list[i];
 		i++;
-		String str1 = String.valueOf(i);
+		String str1 = list[i];
 		i++;
-		String str2 = String.valueOf(i);
+		String str2 = list[i];
 		i++;
-		String str3 = String.valueOf(i);
+		String str3 = list[i];
 		i++;
-		String str4 = String.valueOf(i);
+		String str4 = list[i];
 		i++;
-		String str5 = String.valueOf(i);
+		String str5 = list[i];
 		i++;
-		String str6 = String.valueOf(i);
+		String str6 = list[i];
 		i++;
-		String str7 = String.valueOf(i);
+		String str7 = list[i];
 		i++;
-		String str8 = String.valueOf(i);
+		String str8 = list[i];
 		i++;
-		String str9 = String.valueOf(i);
+		String str9 = list[i];
+		
 		StringBuilder bf = new StringBuilder();
 
 		bf.append(str0).append(str1).append(str2).append(str3).append(str4).append(str5).append(str6).append(str7)
 				.append(str8).append(str9);
 
 		String str = bf.toString();
+		
 	}
 }
