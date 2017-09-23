@@ -1,0 +1,116 @@
+# VM version: JDK 1.8.0_102, VM 25.102-b14
+Benchmark                                                 Mode  Cnt    Score   Error  Units
+jmhTest.MyBenchmarkStringLineHankaku.call1StringLine     thrpt   10  140.927 Å} 1.069  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call2StringConcat   thrpt   10   35.711 Å} 0.432  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call3StringBuffer   thrpt   10   96.962 Å} 0.493  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call4StringBuilder  thrpt   10   99.713 Å} 1.548  ops/s
+
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+Benchmark                                                 Mode  Cnt    Score   Error  Units
+jmhTest.MyBenchmarkStringLineHankaku.call1StringLine     thrpt   10  141.099 Å} 1.144  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call2StringConcat   thrpt   10   35.888 Å} 0.221  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call3StringBuffer   thrpt   10   97.689 Å} 0.812  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call4StringBuilder  thrpt   10   98.916 Å} 3.052  ops/s
+
+# VM version: JDK 9-ea, VM 9-ea+134
+# VM options: <none>
+Benchmark                                                 Mode  Cnt    Score   Error  Units
+jmhTest.MyBenchmarkStringLineHankaku.call1StringLine     thrpt   10  90.187 Å} 2.961  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call2StringConcat   thrpt   10  46.822 Å} 3.277  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call3StringBuffer   thrpt   10  68.937 Å} 2.796  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call4StringBuilder  thrpt   10  78.742 Å} 2.665  ops/s
+
+# VM version: JDK 9, VM 9+181
+# VM options: <none>
+Benchmark                                                 Mode  Cnt    Score   Error  Units
+jmhTest.MyBenchmarkStringLineHankaku.call1StringLine     thrpt   10  92.795 Å}  2.711  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call2StringConcat   thrpt   10  27.106 Å} 17.205  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call3StringBuffer   thrpt   10  53.108 Å} 21.248  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call4StringBuilder  thrpt   10  62.540 Å} 21.275  ops/s
+
+
+# VM version: JDK 9, VM 9+181
+# VM options: -XX:-CompactStrings -DCompactStringEnabled=false
+Benchmark                                                 Mode  Cnt    Score   Error  Units
+jmhTest.MyBenchmarkStringLineHankaku.call1StringLine     thrpt   10  108.819 Å} 4.212  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call2StringConcat   thrpt   10   50.795 Å} 0.952  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call3StringBuffer   thrpt   10   56.127 Å} 0.568  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call4StringBuilder  thrpt   10  104.129 Å} 1.707  ops/s
+
+
+# VM version: JDK 1.8.0_102, VM 25.102-b14
+Benchmark                                                Mode  Cnt    Score   Error  Units
+jmhTest.MyBenchmarkStringLineNumber.call1StringLine     thrpt   10  119.142 Å} 2.526  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call2StringConcat   thrpt   10   71.994 Å} 0.253  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call3StringBuffer   thrpt   10  103.733 Å} 0.337  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call4StringBuilder  thrpt   10  103.402 Å} 1.087  ops/s
+
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+Benchmark                                                Mode  Cnt    Score    Error  Units
+jmhTest.MyBenchmarkStringLineNumber.call1StringLine     thrpt   10  112.127 Å} 34.207  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call2StringConcat   thrpt   10   71.693 Å}  0.270  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call3StringBuffer   thrpt   10  103.061 Å}  1.590  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call4StringBuilder  thrpt   10   88.149 Å} 35.149  ops/s
+
+# VM version: JDK 9-ea, VM 9-ea+134
+# VM options: <none>
+
+Benchmark                                                Mode  Cnt    Score    Error  Units
+jmhTest.MyBenchmarkStringLineNumber.call1StringLine     thrpt   10  245.689 Å} 13.801  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call2StringConcat   thrpt   10  132.742 Å}  9.051  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call3StringBuffer   thrpt   10   49.300 Å}  1.349  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call4StringBuilder  thrpt   10   52.594 Å}  2.545  ops/s
+
+# VM version: JDK 9, VM 9+181
+# VM options: <none>
+
+Benchmark                                                Mode  Cnt    Score     Error  Units
+jmhTest.MyBenchmarkStringLineNumber.call1StringLine     thrpt   10  187.399 Å} 111.698  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call2StringConcat   thrpt   10  103.961 Å}  50.983  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call3StringBuffer   thrpt   10   33.543 Å}  21.675  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call4StringBuilder  thrpt   10   51.688 Å}   0.346  ops/s
+
+# VM version: JDK 9, VM 9+181
+# VM options: -XX:-CompactStrings -DCompactStringEnabled=false
+Benchmark                                                Mode  Cnt    Score    Error  Units
+jmhTest.MyBenchmarkStringLineNumber.call1StringLine     thrpt   10  238.952 Å} 12.086  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call2StringConcat   thrpt   10  107.838 Å}  3.610  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call3StringBuffer   thrpt   10  101.667 Å} 97.174  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call4StringBuilder  thrpt   10  177.984 Å}  3.698  ops/s
+
+
+# VM version: JDK 1.8.0_102, VM 25.102-b14
+Benchmark                                                 Mode  Cnt    Score   Error  Units
+jmhTest.MyBenchmarkStringLineZenkaku.call1StringLine     thrpt   10  141.394 Å} 0.301  ops/s
+jmhTest.MyBenchmarkStringLineZenkaku.call2StringConcat   thrpt   10   36.051 Å} 0.287  ops/s
+jmhTest.MyBenchmarkStringLineZenkaku.call3StringBuffer   thrpt   10   98.531 Å} 0.644  ops/s
+jmhTest.MyBenchmarkStringLineZenkaku.call4StringBuilder  thrpt   10   98.985 Å} 3.572  ops/s
+
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+Benchmark                                                 Mode  Cnt    Score   Error  Units
+jmhTest.MyBenchmarkStringLineZenkaku.call1StringLine     thrpt   10  141.133 Å} 1.504  ops/s
+jmhTest.MyBenchmarkStringLineZenkaku.call2StringConcat   thrpt   10   36.212 Å} 0.202  ops/s
+jmhTest.MyBenchmarkStringLineZenkaku.call3StringBuffer   thrpt   10   97.025 Å} 2.155  ops/s
+jmhTest.MyBenchmarkStringLineZenkaku.call4StringBuilder  thrpt   10   99.454 Å} 1.509  ops/s
+
+# VM version: JDK 9-ea, VM 9-ea+134
+Benchmark                                                 Mode  Cnt   Score   Error  Units
+jmhTest.MyBenchmarkStringLineZenkaku.call1StringLine     thrpt   10  92.686 Å} 0.299  ops/s
+jmhTest.MyBenchmarkStringLineZenkaku.call2StringConcat   thrpt   10  49.554 Å} 0.684  ops/s
+jmhTest.MyBenchmarkStringLineZenkaku.call3StringBuffer   thrpt   10  56.950 Å} 6.474  ops/s
+jmhTest.MyBenchmarkStringLineZenkaku.call4StringBuilder  thrpt   10  69.917 Å} 0.210  ops/s
+
+# VM version: JDK 9, VM 9+181
+Benchmark                                                 Mode  Cnt   Score   Error  Units
+jmhTest.MyBenchmarkStringLineZenkaku.call1StringLine     thrpt   10  93.176 Å} 1.204  ops/s
+jmhTest.MyBenchmarkStringLineZenkaku.call2StringConcat   thrpt   10  48.488 Å} 0.728  ops/s
+jmhTest.MyBenchmarkStringLineZenkaku.call3StringBuffer   thrpt   10  55.984 Å} 6.048  ops/s
+jmhTest.MyBenchmarkStringLineZenkaku.call4StringBuilder  thrpt   10  63.517 Å} 0.586  ops/s
+
+# VM version: JDK 9, VM 9+181
+# VM options: -XX:-CompactStrings -DCompactStringEnabled=false
+Benchmark                                                 Mode  Cnt    Score   Error  Units
+jmhTest.MyBenchmarkStringLineZenkaku.call1StringLine     thrpt   10  109.511 Å} 1.972  ops/s
+jmhTest.MyBenchmarkStringLineZenkaku.call2StringConcat   thrpt   10   50.061 Å} 2.419  ops/s
+jmhTest.MyBenchmarkStringLineZenkaku.call3StringBuffer   thrpt   10   55.549 Å} 0.624  ops/s
+jmhTest.MyBenchmarkStringLineZenkaku.call4StringBuilder  thrpt   10  104.124 Å} 1.103  ops/s

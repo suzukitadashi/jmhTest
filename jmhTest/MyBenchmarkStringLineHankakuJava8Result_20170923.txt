@@ -1,0 +1,183 @@
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: C:\Program Files\Java\latest\jre\bin\java.exe
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jmhTest.MyBenchmarkStringLineHankaku.call1StringLine
+
+# Run progress: 0.00% complete, ETA 00:01:20
+# Fork: 1 of 2
+# Warmup Iteration   1: 54.620 ops/s
+# Warmup Iteration   2: 49.385 ops/s
+# Warmup Iteration   3: 122.812 ops/s
+# Warmup Iteration   4: 138.841 ops/s
+# Warmup Iteration   5: 135.014 ops/s
+Iteration   1: 139.745 ops/s
+Iteration   2: 140.130 ops/s
+Iteration   3: 141.895 ops/s
+Iteration   4: 141.576 ops/s
+Iteration   5: 140.702 ops/s
+
+# Run progress: 12.50% complete, ETA 00:01:17
+# Fork: 2 of 2
+# Warmup Iteration   1: 59.472 ops/s
+# Warmup Iteration   2: 55.212 ops/s
+# Warmup Iteration   3: 123.094 ops/s
+# Warmup Iteration   4: 138.954 ops/s
+# Warmup Iteration   5: 138.798 ops/s
+Iteration   1: 141.382 ops/s
+Iteration   2: 141.774 ops/s
+Iteration   3: 141.362 ops/s
+Iteration   4: 141.817 ops/s
+Iteration   5: 140.607 ops/s
+
+
+Result "jmhTest.MyBenchmarkStringLineHankaku.call1StringLine":
+  141.099 Å}(99.9%) 1.144 ops/s [Average]
+  (min, avg, max) = (139.745, 141.099, 141.895), stdev = 0.757
+  CI (99.9%): [139.955, 142.243] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: C:\Program Files\Java\latest\jre\bin\java.exe
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jmhTest.MyBenchmarkStringLineHankaku.call2StringConcat
+
+# Run progress: 25.00% complete, ETA 00:01:04
+# Fork: 1 of 2
+# Warmup Iteration   1: 33.101 ops/s
+# Warmup Iteration   2: 34.972 ops/s
+# Warmup Iteration   3: 36.691 ops/s
+# Warmup Iteration   4: 35.909 ops/s
+# Warmup Iteration   5: 36.435 ops/s
+Iteration   1: 35.870 ops/s
+Iteration   2: 35.915 ops/s
+Iteration   3: 36.162 ops/s
+Iteration   4: 35.811 ops/s
+Iteration   5: 36.097 ops/s
+
+# Run progress: 37.50% complete, ETA 00:00:53
+# Fork: 2 of 2
+# Warmup Iteration   1: 32.919 ops/s
+# Warmup Iteration   2: 34.391 ops/s
+# Warmup Iteration   3: 35.882 ops/s
+# Warmup Iteration   4: 36.055 ops/s
+# Warmup Iteration   5: 35.789 ops/s
+Iteration   1: 35.831 ops/s
+Iteration   2: 35.892 ops/s
+Iteration   3: 35.684 ops/s
+Iteration   4: 35.883 ops/s
+Iteration   5: 35.741 ops/s
+
+
+Result "jmhTest.MyBenchmarkStringLineHankaku.call2StringConcat":
+  35.888 Å}(99.9%) 0.221 ops/s [Average]
+  (min, avg, max) = (35.684, 35.888, 36.162), stdev = 0.146
+  CI (99.9%): [35.668, 36.109] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: C:\Program Files\Java\latest\jre\bin\java.exe
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jmhTest.MyBenchmarkStringLineHankaku.call3StringBuffer
+
+# Run progress: 50.00% complete, ETA 00:00:42
+# Fork: 1 of 2
+# Warmup Iteration   1: 33.556 ops/s
+# Warmup Iteration   2: 38.415 ops/s
+# Warmup Iteration   3: 90.023 ops/s
+# Warmup Iteration   4: 95.374 ops/s
+# Warmup Iteration   5: 97.641 ops/s
+Iteration   1: 97.913 ops/s
+Iteration   2: 97.798 ops/s
+Iteration   3: 97.000 ops/s
+Iteration   4: 98.184 ops/s
+Iteration   5: 98.249 ops/s
+
+# Run progress: 62.50% complete, ETA 00:00:32
+# Fork: 2 of 2
+# Warmup Iteration   1: 86.296 ops/s
+# Warmup Iteration   2: 92.922 ops/s
+# Warmup Iteration   3: 98.147 ops/s
+# Warmup Iteration   4: 98.001 ops/s
+# Warmup Iteration   5: 97.945 ops/s
+Iteration   1: 97.837 ops/s
+Iteration   2: 96.604 ops/s
+Iteration   3: 97.928 ops/s
+Iteration   4: 98.038 ops/s
+Iteration   5: 97.339 ops/s
+
+
+Result "jmhTest.MyBenchmarkStringLineHankaku.call3StringBuffer":
+  97.689 Å}(99.9%) 0.812 ops/s [Average]
+  (min, avg, max) = (96.604, 97.689, 98.249), stdev = 0.537
+  CI (99.9%): [96.877, 98.501] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: C:\Program Files\Java\latest\jre\bin\java.exe
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jmhTest.MyBenchmarkStringLineHankaku.call4StringBuilder
+
+# Run progress: 75.00% complete, ETA 00:00:21
+# Fork: 1 of 2
+# Warmup Iteration   1: 39.727 ops/s
+# Warmup Iteration   2: 38.415 ops/s
+# Warmup Iteration   3: 85.969 ops/s
+# Warmup Iteration   4: 96.842 ops/s
+# Warmup Iteration   5: 98.988 ops/s
+Iteration   1: 98.806 ops/s
+Iteration   2: 97.994 ops/s
+Iteration   3: 98.802 ops/s
+Iteration   4: 95.930 ops/s
+Iteration   5: 95.169 ops/s
+
+# Run progress: 87.50% complete, ETA 00:00:10
+# Fork: 2 of 2
+# Warmup Iteration   1: 87.244 ops/s
+# Warmup Iteration   2: 95.854 ops/s
+# Warmup Iteration   3: 98.401 ops/s
+# Warmup Iteration   4: 100.039 ops/s
+# Warmup Iteration   5: 100.924 ops/s
+Iteration   1: 99.962 ops/s
+Iteration   2: 100.529 ops/s
+Iteration   3: 100.860 ops/s
+Iteration   4: 100.445 ops/s
+Iteration   5: 100.659 ops/s
+
+
+Result "jmhTest.MyBenchmarkStringLineHankaku.call4StringBuilder":
+  98.916 Å}(99.9%) 3.052 ops/s [Average]
+  (min, avg, max) = (95.169, 98.916, 100.860), stdev = 2.019
+  CI (99.9%): [95.863, 101.968] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:24
+
+Benchmark                                                 Mode  Cnt    Score   Error  Units
+jmhTest.MyBenchmarkStringLineHankaku.call1StringLine     thrpt   10  141.099 Å} 1.144  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call2StringConcat   thrpt   10   35.888 Å} 0.221  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call3StringBuffer   thrpt   10   97.689 Å} 0.812  ops/s
+jmhTest.MyBenchmarkStringLineHankaku.call4StringBuilder  thrpt   10   98.916 Å} 3.052  ops/s
