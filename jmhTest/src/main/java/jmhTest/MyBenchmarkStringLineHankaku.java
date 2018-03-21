@@ -9,13 +9,15 @@ import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
-
+import java.util.Locale;
 
 public class MyBenchmarkStringLineHankaku {
 	
 	private static String[] list = {"a","b","c","d","e","f","g","h","i", "j"};
 
 	public static void main(String[] args) throws RunnerException {
+		
+		Locale.setDefault(Locale.ENGLISH);
 		
 		Options opt = new OptionsBuilder().include(MyBenchmarkStringLineHankaku.class.getSimpleName()).warmupIterations(5)
 				.measurementIterations(5).forks(2).build();
