@@ -1,0 +1,768 @@
+Classfile /C:/Users/xxxx/git/jmhTest/jmhTest/target/classes/jmhTest/MyBenchmarkStringLine.class
+  Last modified 2016/09/04; size 4197 bytes
+  MD5 checksum 86cde553c51d52127e4360cfc00b2dcf
+  Compiled from "MyBenchmarkStringLine.java"
+public class jmhTest.MyBenchmarkStringLine
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Methodref          #28.#76       // java/lang/Object."<init>":()V
+    #2 = Class              #77           // org/openjdk/jmh/runner/options/OptionsBuilder
+    #3 = Methodref          #2.#76        // org/openjdk/jmh/runner/options/OptionsBuilder."<init>":()V
+    #4 = Class              #78           // jmhTest/MyBenchmarkStringLine
+    #5 = Methodref          #79.#80       // java/lang/Class.getSimpleName:()Ljava/lang/String;
+    #6 = Methodref          #2.#81        // org/openjdk/jmh/runner/options/OptionsBuilder.include:(Ljava/lang/String;)Lorg/openjdk/jmh/runner/options/ChainedOptionsBuilder;
+    #7 = InterfaceMethodref #82.#83       // org/openjdk/jmh/runner/options/ChainedOptionsBuilder.warmupIterations:(I)Lorg/openjdk/jmh/runner/options/ChainedOptionsBuilder;
+    #8 = InterfaceMethodref #82.#84       // org/openjdk/jmh/runner/options/ChainedOptionsBuilder.measurementIterations:(I)Lorg/openjdk/jmh/runner/options/ChainedOptionsBuilder;
+    #9 = InterfaceMethodref #82.#85       // org/openjdk/jmh/runner/options/ChainedOptionsBuilder.forks:(I)Lorg/openjdk/jmh/runner/options/ChainedOptionsBuilder;
+   #10 = InterfaceMethodref #82.#86       // org/openjdk/jmh/runner/options/ChainedOptionsBuilder.build:()Lorg/openjdk/jmh/runner/options/Options;
+   #11 = Class              #87           // org/openjdk/jmh/runner/Runner
+   #12 = Methodref          #11.#88       // org/openjdk/jmh/runner/Runner."<init>":(Lorg/openjdk/jmh/runner/options/Options;)V
+   #13 = Methodref          #11.#89       // org/openjdk/jmh/runner/Runner.run:()Ljava/util/Collection;
+   #14 = Integer            100000
+   #15 = Methodref          #4.#90        // jmhTest/MyBenchmarkStringLine.test1StringLine:()V
+   #16 = Methodref          #4.#91        // jmhTest/MyBenchmarkStringLine.test2StringConcat:()V
+   #17 = Methodref          #4.#92        // jmhTest/MyBenchmarkStringLine.test3StringBuffer:()V
+   #18 = Methodref          #4.#93        // jmhTest/MyBenchmarkStringLine.test4StringBuilder:()V
+   #19 = Methodref          #94.#95       // java/lang/String.valueOf:(I)Ljava/lang/String;
+   #20 = Class              #96           // java/lang/StringBuilder
+   #21 = Methodref          #20.#76       // java/lang/StringBuilder."<init>":()V
+   #22 = Methodref          #20.#97       // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #23 = Methodref          #20.#98       // java/lang/StringBuilder.toString:()Ljava/lang/String;
+   #24 = Methodref          #94.#99       // java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
+   #25 = Class              #100          // java/lang/StringBuffer
+   #26 = Methodref          #25.#76       // java/lang/StringBuffer."<init>":()V
+   #27 = Methodref          #25.#101      // java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+   #28 = Class              #102          // java/lang/Object
+   #29 = Utf8               count
+   #30 = Utf8               I
+   #31 = Utf8               ConstantValue
+   #32 = Utf8               <init>
+   #33 = Utf8               ()V
+   #34 = Utf8               Code
+   #35 = Utf8               LineNumberTable
+   #36 = Utf8               LocalVariableTable
+   #37 = Utf8               this
+   #38 = Utf8               LjmhTest/MyBenchmarkStringLine;
+   #39 = Utf8               main
+   #40 = Utf8               ([Ljava/lang/String;)V
+   #41 = Utf8               args
+   #42 = Utf8               [Ljava/lang/String;
+   #43 = Utf8               opt
+   #44 = Utf8               Lorg/openjdk/jmh/runner/options/Options;
+   #45 = Utf8               Exceptions
+   #46 = Class              #103          // org/openjdk/jmh/runner/RunnerException
+   #47 = Utf8               call1StringLine
+   #48 = Utf8               i
+   #49 = Utf8               StackMapTable
+   #50 = Utf8               RuntimeVisibleAnnotations
+   #51 = Utf8               Lorg/openjdk/jmh/annotations/Benchmark;
+   #52 = Utf8               call2StringConcat
+   #53 = Utf8               call3StringBuffer
+   #54 = Utf8               call4StringBuilder
+   #55 = Utf8               test1StringLine
+   #56 = Utf8               str0
+   #57 = Utf8               Ljava/lang/String;
+   #58 = Utf8               str1
+   #59 = Utf8               str2
+   #60 = Utf8               str3
+   #61 = Utf8               str4
+   #62 = Utf8               str5
+   #63 = Utf8               str6
+   #64 = Utf8               str7
+   #65 = Utf8               str8
+   #66 = Utf8               str9
+   #67 = Utf8               str
+   #68 = Utf8               test2StringConcat
+   #69 = Utf8               test3StringBuffer
+   #70 = Utf8               bf
+   #71 = Utf8               Ljava/lang/StringBuffer;
+   #72 = Utf8               test4StringBuilder
+   #73 = Utf8               Ljava/lang/StringBuilder;
+   #74 = Utf8               SourceFile
+   #75 = Utf8               MyBenchmarkStringLine.java
+   #76 = NameAndType        #32:#33       // "<init>":()V
+   #77 = Utf8               org/openjdk/jmh/runner/options/OptionsBuilder
+   #78 = Utf8               jmhTest/MyBenchmarkStringLine
+   #79 = Class              #104          // java/lang/Class
+   #80 = NameAndType        #105:#106     // getSimpleName:()Ljava/lang/String;
+   #81 = NameAndType        #107:#108     // include:(Ljava/lang/String;)Lorg/openjdk/jmh/runner/options/ChainedOptionsBuilder;
+   #82 = Class              #109          // org/openjdk/jmh/runner/options/ChainedOptionsBuilder
+   #83 = NameAndType        #110:#111     // warmupIterations:(I)Lorg/openjdk/jmh/runner/options/ChainedOptionsBuilder;
+   #84 = NameAndType        #112:#111     // measurementIterations:(I)Lorg/openjdk/jmh/runner/options/ChainedOptionsBuilder;
+   #85 = NameAndType        #113:#111     // forks:(I)Lorg/openjdk/jmh/runner/options/ChainedOptionsBuilder;
+   #86 = NameAndType        #114:#115     // build:()Lorg/openjdk/jmh/runner/options/Options;
+   #87 = Utf8               org/openjdk/jmh/runner/Runner
+   #88 = NameAndType        #32:#116      // "<init>":(Lorg/openjdk/jmh/runner/options/Options;)V
+   #89 = NameAndType        #117:#118     // run:()Ljava/util/Collection;
+   #90 = NameAndType        #55:#33       // test1StringLine:()V
+   #91 = NameAndType        #68:#33       // test2StringConcat:()V
+   #92 = NameAndType        #69:#33       // test3StringBuffer:()V
+   #93 = NameAndType        #72:#33       // test4StringBuilder:()V
+   #94 = Class              #119          // java/lang/String
+   #95 = NameAndType        #120:#121     // valueOf:(I)Ljava/lang/String;
+   #96 = Utf8               java/lang/StringBuilder
+   #97 = NameAndType        #122:#123     // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #98 = NameAndType        #124:#106     // toString:()Ljava/lang/String;
+   #99 = NameAndType        #125:#126     // concat:(Ljava/lang/String;)Ljava/lang/String;
+  #100 = Utf8               java/lang/StringBuffer
+  #101 = NameAndType        #122:#127     // append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  #102 = Utf8               java/lang/Object
+  #103 = Utf8               org/openjdk/jmh/runner/RunnerException
+  #104 = Utf8               java/lang/Class
+  #105 = Utf8               getSimpleName
+  #106 = Utf8               ()Ljava/lang/String;
+  #107 = Utf8               include
+  #108 = Utf8               (Ljava/lang/String;)Lorg/openjdk/jmh/runner/options/ChainedOptionsBuilder;
+  #109 = Utf8               org/openjdk/jmh/runner/options/ChainedOptionsBuilder
+  #110 = Utf8               warmupIterations
+  #111 = Utf8               (I)Lorg/openjdk/jmh/runner/options/ChainedOptionsBuilder;
+  #112 = Utf8               measurementIterations
+  #113 = Utf8               forks
+  #114 = Utf8               build
+  #115 = Utf8               ()Lorg/openjdk/jmh/runner/options/Options;
+  #116 = Utf8               (Lorg/openjdk/jmh/runner/options/Options;)V
+  #117 = Utf8               run
+  #118 = Utf8               ()Ljava/util/Collection;
+  #119 = Utf8               java/lang/String
+  #120 = Utf8               valueOf
+  #121 = Utf8               (I)Ljava/lang/String;
+  #122 = Utf8               append
+  #123 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #124 = Utf8               toString
+  #125 = Utf8               concat
+  #126 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+  #127 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuffer;
+{
+  public jmhTest.MyBenchmarkStringLine();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 9: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LjmhTest/MyBenchmarkStringLine;
+
+  public static void main(java.lang.String[]) throws org.openjdk.jmh.runner.RunnerException;
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=2, args_size=1
+         0: new           #2                  // class org/openjdk/jmh/runner/options/OptionsBuilder
+         3: dup
+         4: invokespecial #3                  // Method org/openjdk/jmh/runner/options/OptionsBuilder."<init>":()V
+         7: ldc           #4                  // class jmhTest/MyBenchmarkStringLine
+         9: invokevirtual #5                  // Method java/lang/Class.getSimpleName:()Ljava/lang/String;
+        12: invokevirtual #6                  // Method org/openjdk/jmh/runner/options/OptionsBuilder.include:(Ljava/lang/String;)Lorg/openjdk/jmh/runner/options/ChainedOptionsBuilder;
+        15: iconst_5
+        16: invokeinterface #7,  2            // InterfaceMethod org/openjdk/jmh/runner/options/ChainedOptionsBuilder.warmupIterations:(I)Lorg/openjdk/jmh/runner/options/ChainedOptionsBuilder;
+        21: iconst_5
+        22: invokeinterface #8,  2            // InterfaceMethod org/openjdk/jmh/runner/options/ChainedOptionsBuilder.measurementIterations:(I)Lorg/openjdk/jmh/runner/options/ChainedOptionsBuilder;
+        27: iconst_2
+        28: invokeinterface #9,  2            // InterfaceMethod org/openjdk/jmh/runner/options/ChainedOptionsBuilder.forks:(I)Lorg/openjdk/jmh/runner/options/ChainedOptionsBuilder;
+        33: invokeinterface #10,  1           // InterfaceMethod org/openjdk/jmh/runner/options/ChainedOptionsBuilder.build:()Lorg/openjdk/jmh/runner/options/Options;
+        38: astore_1
+        39: new           #11                 // class org/openjdk/jmh/runner/Runner
+        42: dup
+        43: aload_1
+        44: invokespecial #12                 // Method org/openjdk/jmh/runner/Runner."<init>":(Lorg/openjdk/jmh/runner/options/Options;)V
+        47: invokevirtual #13                 // Method org/openjdk/jmh/runner/Runner.run:()Ljava/util/Collection;
+        50: pop
+        51: return
+      LineNumberTable:
+        line 12: 0
+        line 13: 22
+        line 14: 39
+        line 16: 51
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      52     0  args   [Ljava/lang/String;
+           39      13     1   opt   Lorg/openjdk/jmh/runner/options/Options;
+    Exceptions:
+      throws org.openjdk.jmh.runner.RunnerException
+
+  public void call1StringLine();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: iconst_0
+         1: istore_1
+         2: iload_1
+         3: ldc           #14                 // int 100000
+         5: if_icmpge     18
+         8: aload_0
+         9: invokevirtual #15                 // Method test1StringLine:()V
+        12: iinc          1, 1
+        15: goto          2
+        18: return
+      LineNumberTable:
+        line 22: 0
+        line 23: 8
+        line 22: 12
+        line 25: 18
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            2      16     1     i   I
+            0      19     0  this   LjmhTest/MyBenchmarkStringLine;
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 15
+    RuntimeVisibleAnnotations:
+      0: #51()
+
+  public void call2StringConcat();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: iconst_0
+         1: istore_1
+         2: iload_1
+         3: ldc           #14                 // int 100000
+         5: if_icmpge     18
+         8: aload_0
+         9: invokevirtual #16                 // Method test2StringConcat:()V
+        12: iinc          1, 1
+        15: goto          2
+        18: return
+      LineNumberTable:
+        line 29: 0
+        line 30: 8
+        line 29: 12
+        line 32: 18
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            2      16     1     i   I
+            0      19     0  this   LjmhTest/MyBenchmarkStringLine;
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 15
+    RuntimeVisibleAnnotations:
+      0: #51()
+
+  public void call3StringBuffer();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: iconst_0
+         1: istore_1
+         2: iload_1
+         3: ldc           #14                 // int 100000
+         5: if_icmpge     18
+         8: aload_0
+         9: invokevirtual #17                 // Method test3StringBuffer:()V
+        12: iinc          1, 1
+        15: goto          2
+        18: return
+      LineNumberTable:
+        line 36: 0
+        line 37: 8
+        line 36: 12
+        line 39: 18
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            2      16     1     i   I
+            0      19     0  this   LjmhTest/MyBenchmarkStringLine;
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 15
+    RuntimeVisibleAnnotations:
+      0: #51()
+
+  public void call4StringBuilder();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: iconst_0
+         1: istore_1
+         2: iload_1
+         3: ldc           #14                 // int 100000
+         5: if_icmpge     18
+         8: aload_0
+         9: invokevirtual #18                 // Method test4StringBuilder:()V
+        12: iinc          1, 1
+        15: goto          2
+        18: return
+      LineNumberTable:
+        line 43: 0
+        line 44: 8
+        line 43: 12
+        line 46: 18
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            2      16     1     i   I
+            0      19     0  this   LjmhTest/MyBenchmarkStringLine;
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 15
+    RuntimeVisibleAnnotations:
+      0: #51()
+
+  public void test1StringLine();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=13, args_size=1
+         0: iconst_0
+         1: istore_1
+         2: iload_1
+         3: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+         6: astore_2
+         7: iinc          1, 1
+        10: iload_1
+        11: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        14: astore_3
+        15: iinc          1, 1
+        18: iload_1
+        19: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        22: astore        4
+        24: iinc          1, 1
+        27: iload_1
+        28: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        31: astore        5
+        33: iinc          1, 1
+        36: iload_1
+        37: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        40: astore        6
+        42: iinc          1, 1
+        45: iload_1
+        46: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        49: astore        7
+        51: iinc          1, 1
+        54: iload_1
+        55: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        58: astore        8
+        60: iinc          1, 1
+        63: iload_1
+        64: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        67: astore        9
+        69: iinc          1, 1
+        72: iload_1
+        73: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        76: astore        10
+        78: iinc          1, 1
+        81: iload_1
+        82: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        85: astore        11
+        87: new           #20                 // class java/lang/StringBuilder
+        90: dup
+        91: invokespecial #21                 // Method java/lang/StringBuilder."<init>":()V
+        94: aload_2
+        95: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        98: aload_3
+        99: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       102: aload         4
+       104: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       107: aload         5
+       109: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       112: aload         6
+       114: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       117: aload         7
+       119: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       122: aload         8
+       124: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       127: aload         9
+       129: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       132: aload         10
+       134: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       137: aload         11
+       139: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       142: invokevirtual #23                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       145: astore        12
+       147: return
+      LineNumberTable:
+        line 50: 0
+        line 51: 2
+        line 52: 7
+        line 53: 10
+        line 54: 15
+        line 55: 18
+        line 56: 24
+        line 57: 27
+        line 58: 33
+        line 59: 36
+        line 60: 42
+        line 61: 45
+        line 62: 51
+        line 63: 54
+        line 64: 60
+        line 65: 63
+        line 66: 69
+        line 67: 72
+        line 68: 78
+        line 69: 81
+        line 71: 87
+        line 73: 147
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     148     0  this   LjmhTest/MyBenchmarkStringLine;
+            2     146     1     i   I
+            7     141     2  str0   Ljava/lang/String;
+           15     133     3  str1   Ljava/lang/String;
+           24     124     4  str2   Ljava/lang/String;
+           33     115     5  str3   Ljava/lang/String;
+           42     106     6  str4   Ljava/lang/String;
+           51      97     7  str5   Ljava/lang/String;
+           60      88     8  str6   Ljava/lang/String;
+           69      79     9  str7   Ljava/lang/String;
+           78      70    10  str8   Ljava/lang/String;
+           87      61    11  str9   Ljava/lang/String;
+          147       1    12   str   Ljava/lang/String;
+
+  public void test2StringConcat();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=13, args_size=1
+         0: iconst_0
+         1: istore_1
+         2: iload_1
+         3: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+         6: astore_2
+         7: iinc          1, 1
+        10: iload_1
+        11: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        14: astore_3
+        15: iinc          1, 1
+        18: iload_1
+        19: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        22: astore        4
+        24: iinc          1, 1
+        27: iload_1
+        28: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        31: astore        5
+        33: iinc          1, 1
+        36: iload_1
+        37: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        40: astore        6
+        42: iinc          1, 1
+        45: iload_1
+        46: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        49: astore        7
+        51: iinc          1, 1
+        54: iload_1
+        55: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        58: astore        8
+        60: iinc          1, 1
+        63: iload_1
+        64: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        67: astore        9
+        69: iinc          1, 1
+        72: iload_1
+        73: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        76: astore        10
+        78: iinc          1, 1
+        81: iload_1
+        82: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        85: astore        11
+        87: aload_2
+        88: aload_3
+        89: invokevirtual #24                 // Method java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
+        92: aload         4
+        94: invokevirtual #24                 // Method java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
+        97: aload         5
+        99: invokevirtual #24                 // Method java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
+       102: aload         6
+       104: invokevirtual #24                 // Method java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
+       107: aload         7
+       109: invokevirtual #24                 // Method java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
+       112: aload         8
+       114: invokevirtual #24                 // Method java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
+       117: aload         9
+       119: invokevirtual #24                 // Method java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
+       122: aload         10
+       124: invokevirtual #24                 // Method java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
+       127: aload         11
+       129: invokevirtual #24                 // Method java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
+       132: astore        12
+       134: return
+      LineNumberTable:
+        line 77: 0
+        line 78: 2
+        line 79: 7
+        line 80: 10
+        line 81: 15
+        line 82: 18
+        line 83: 24
+        line 84: 27
+        line 85: 33
+        line 86: 36
+        line 87: 42
+        line 88: 45
+        line 89: 51
+        line 90: 54
+        line 91: 60
+        line 92: 63
+        line 93: 69
+        line 94: 72
+        line 95: 78
+        line 96: 81
+        line 98: 87
+        line 99: 124
+        line 101: 134
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     135     0  this   LjmhTest/MyBenchmarkStringLine;
+            2     133     1     i   I
+            7     128     2  str0   Ljava/lang/String;
+           15     120     3  str1   Ljava/lang/String;
+           24     111     4  str2   Ljava/lang/String;
+           33     102     5  str3   Ljava/lang/String;
+           42      93     6  str4   Ljava/lang/String;
+           51      84     7  str5   Ljava/lang/String;
+           60      75     8  str6   Ljava/lang/String;
+           69      66     9  str7   Ljava/lang/String;
+           78      57    10  str8   Ljava/lang/String;
+           87      48    11  str9   Ljava/lang/String;
+          134       1    12   str   Ljava/lang/String;
+
+  public void test3StringBuffer();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=13, args_size=1
+         0: iconst_0
+         1: istore_1
+         2: iload_1
+         3: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+         6: astore_2
+         7: iinc          1, 1
+        10: iload_1
+        11: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        14: astore_3
+        15: iinc          1, 1
+        18: iload_1
+        19: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        22: astore        4
+        24: iinc          1, 1
+        27: iload_1
+        28: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        31: astore        5
+        33: iinc          1, 1
+        36: iload_1
+        37: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        40: astore        6
+        42: iinc          1, 1
+        45: iload_1
+        46: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        49: astore        7
+        51: iinc          1, 1
+        54: iload_1
+        55: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        58: astore        8
+        60: iinc          1, 1
+        63: iload_1
+        64: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        67: astore        9
+        69: iinc          1, 1
+        72: iload_1
+        73: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        76: astore        10
+        78: iinc          1, 1
+        81: iload_1
+        82: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        85: astore        11
+        87: new           #25                 // class java/lang/StringBuffer
+        90: dup
+        91: invokespecial #26                 // Method java/lang/StringBuffer."<init>":()V
+        94: astore        12
+        96: aload         12
+        98: aload_2
+        99: invokevirtual #27                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       102: aload_3
+       103: invokevirtual #27                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       106: aload         4
+       108: invokevirtual #27                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       111: aload         5
+       113: invokevirtual #27                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       116: aload         6
+       118: invokevirtual #27                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       121: aload         7
+       123: invokevirtual #27                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       126: aload         8
+       128: invokevirtual #27                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       131: aload         9
+       133: invokevirtual #27                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       136: aload         10
+       138: invokevirtual #27                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       141: aload         11
+       143: invokevirtual #27                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       146: pop
+       147: return
+      LineNumberTable:
+        line 105: 0
+        line 106: 2
+        line 107: 7
+        line 108: 10
+        line 109: 15
+        line 110: 18
+        line 111: 24
+        line 112: 27
+        line 113: 33
+        line 114: 36
+        line 115: 42
+        line 116: 45
+        line 117: 51
+        line 118: 54
+        line 119: 60
+        line 120: 63
+        line 121: 69
+        line 122: 72
+        line 123: 78
+        line 124: 81
+        line 126: 87
+        line 128: 96
+        line 129: 138
+        line 131: 147
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     148     0  this   LjmhTest/MyBenchmarkStringLine;
+            2     146     1     i   I
+            7     141     2  str0   Ljava/lang/String;
+           15     133     3  str1   Ljava/lang/String;
+           24     124     4  str2   Ljava/lang/String;
+           33     115     5  str3   Ljava/lang/String;
+           42     106     6  str4   Ljava/lang/String;
+           51      97     7  str5   Ljava/lang/String;
+           60      88     8  str6   Ljava/lang/String;
+           69      79     9  str7   Ljava/lang/String;
+           78      70    10  str8   Ljava/lang/String;
+           87      61    11  str9   Ljava/lang/String;
+           96      52    12    bf   Ljava/lang/StringBuffer;
+
+  public void test4StringBuilder();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=13, args_size=1
+         0: iconst_0
+         1: istore_1
+         2: iload_1
+         3: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+         6: astore_2
+         7: iinc          1, 1
+        10: iload_1
+        11: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        14: astore_3
+        15: iinc          1, 1
+        18: iload_1
+        19: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        22: astore        4
+        24: iinc          1, 1
+        27: iload_1
+        28: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        31: astore        5
+        33: iinc          1, 1
+        36: iload_1
+        37: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        40: astore        6
+        42: iinc          1, 1
+        45: iload_1
+        46: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        49: astore        7
+        51: iinc          1, 1
+        54: iload_1
+        55: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        58: astore        8
+        60: iinc          1, 1
+        63: iload_1
+        64: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        67: astore        9
+        69: iinc          1, 1
+        72: iload_1
+        73: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        76: astore        10
+        78: iinc          1, 1
+        81: iload_1
+        82: invokestatic  #19                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+        85: astore        11
+        87: new           #20                 // class java/lang/StringBuilder
+        90: dup
+        91: invokespecial #21                 // Method java/lang/StringBuilder."<init>":()V
+        94: astore        12
+        96: aload         12
+        98: aload_2
+        99: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       102: aload_3
+       103: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       106: aload         4
+       108: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       111: aload         5
+       113: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       116: aload         6
+       118: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       121: aload         7
+       123: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       126: aload         8
+       128: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       131: aload         9
+       133: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       136: aload         10
+       138: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       141: aload         11
+       143: invokevirtual #22                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       146: pop
+       147: return
+      LineNumberTable:
+        line 135: 0
+        line 136: 2
+        line 137: 7
+        line 138: 10
+        line 139: 15
+        line 140: 18
+        line 141: 24
+        line 142: 27
+        line 143: 33
+        line 144: 36
+        line 145: 42
+        line 146: 45
+        line 147: 51
+        line 148: 54
+        line 149: 60
+        line 150: 63
+        line 151: 69
+        line 152: 72
+        line 153: 78
+        line 154: 81
+        line 155: 87
+        line 157: 96
+        line 158: 138
+        line 160: 147
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     148     0  this   LjmhTest/MyBenchmarkStringLine;
+            2     146     1     i   I
+            7     141     2  str0   Ljava/lang/String;
+           15     133     3  str1   Ljava/lang/String;
+           24     124     4  str2   Ljava/lang/String;
+           33     115     5  str3   Ljava/lang/String;
+           42     106     6  str4   Ljava/lang/String;
+           51      97     7  str5   Ljava/lang/String;
+           60      88     8  str6   Ljava/lang/String;
+           69      79     9  str7   Ljava/lang/String;
+           78      70    10  str8   Ljava/lang/String;
+           87      61    11  str9   Ljava/lang/String;
+           96      52    12    bf   Ljava/lang/StringBuilder;
+}
+SourceFile: "MyBenchmarkStringLine.java"

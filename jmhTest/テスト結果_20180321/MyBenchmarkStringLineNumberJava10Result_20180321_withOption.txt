@@ -1,0 +1,183 @@
+# JMH version: 1.20
+# VM version: JDK 10, VM 10+46
+# VM invoker: C:\Program Files\Java\latest\bin\java.exe
+# VM options: -XX:-CompactStrings -DCompactStringEnabled=false
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jmhTest.MyBenchmarkStringLineNumber.call1StringLine
+
+# Run progress: 0.00% complete, ETA 00:01:20
+# Fork: 1 of 2
+# Warmup Iteration   1: 126.590 ops/s
+# Warmup Iteration   2: 242.048 ops/s
+# Warmup Iteration   3: 243.937 ops/s
+# Warmup Iteration   4: 245.444 ops/s
+# Warmup Iteration   5: 228.819 ops/s
+Iteration   1: 209.916 ops/s
+Iteration   2: 227.952 ops/s
+Iteration   3: 229.932 ops/s
+Iteration   4: 214.669 ops/s
+Iteration   5: 198.073 ops/s
+
+# Run progress: 12.50% complete, ETA 00:01:13
+# Fork: 2 of 2
+# Warmup Iteration   1: 107.494 ops/s
+# Warmup Iteration   2: 175.664 ops/s
+# Warmup Iteration   3: 185.032 ops/s
+# Warmup Iteration   4: 201.121 ops/s
+# Warmup Iteration   5: 185.383 ops/s
+Iteration   1: 182.927 ops/s
+Iteration   2: 209.573 ops/s
+Iteration   3: 222.080 ops/s
+Iteration   4: 213.342 ops/s
+Iteration   5: 223.396 ops/s
+
+
+Result "jmhTest.MyBenchmarkStringLineNumber.call1StringLine":
+  213.186 Å}(99.9%) 21.686 ops/s [Average]
+  (min, avg, max) = (182.927, 213.186, 229.932), stdev = 14.344
+  CI (99.9%): [191.500, 234.872] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 10, VM 10+46
+# VM invoker: C:\Program Files\Java\latest\bin\java.exe
+# VM options: -XX:-CompactStrings -DCompactStringEnabled=false
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jmhTest.MyBenchmarkStringLineNumber.call2StringConcat
+
+# Run progress: 25.00% complete, ETA 00:01:03
+# Fork: 1 of 2
+# Warmup Iteration   1: 71.773 ops/s
+# Warmup Iteration   2: 108.672 ops/s
+# Warmup Iteration   3: 106.032 ops/s
+# Warmup Iteration   4: 108.009 ops/s
+# Warmup Iteration   5: 106.466 ops/s
+Iteration   1: 106.217 ops/s
+Iteration   2: 107.222 ops/s
+Iteration   3: 106.862 ops/s
+Iteration   4: 107.376 ops/s
+Iteration   5: 108.065 ops/s
+
+# Run progress: 37.50% complete, ETA 00:00:52
+# Fork: 2 of 2
+# Warmup Iteration   1: 69.496 ops/s
+# Warmup Iteration   2: 106.600 ops/s
+# Warmup Iteration   3: 105.215 ops/s
+# Warmup Iteration   4: 103.484 ops/s
+# Warmup Iteration   5: 106.289 ops/s
+Iteration   1: 106.848 ops/s
+Iteration   2: 106.890 ops/s
+Iteration   3: 105.363 ops/s
+Iteration   4: 106.489 ops/s
+Iteration   5: 100.526 ops/s
+
+
+Result "jmhTest.MyBenchmarkStringLineNumber.call2StringConcat":
+  106.186 Å}(99.9%) 3.196 ops/s [Average]
+  (min, avg, max) = (100.526, 106.186, 108.065), stdev = 2.114
+  CI (99.9%): [102.990, 109.382] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 10, VM 10+46
+# VM invoker: C:\Program Files\Java\latest\bin\java.exe
+# VM options: -XX:-CompactStrings -DCompactStringEnabled=false
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jmhTest.MyBenchmarkStringLineNumber.call3StringBuffer
+
+# Run progress: 50.00% complete, ETA 00:00:42
+# Fork: 1 of 2
+# Warmup Iteration   1: 104.658 ops/s
+# Warmup Iteration   2: 157.744 ops/s
+# Warmup Iteration   3: 157.956 ops/s
+# Warmup Iteration   4: 150.594 ops/s
+# Warmup Iteration   5: 151.721 ops/s
+Iteration   1: 118.726 ops/s
+Iteration   2: 120.152 ops/s
+Iteration   3: 123.664 ops/s
+Iteration   4: 133.708 ops/s
+Iteration   5: 140.857 ops/s
+
+# Run progress: 62.50% complete, ETA 00:00:31
+# Fork: 2 of 2
+# Warmup Iteration   1: 34.212 ops/s
+# Warmup Iteration   2: 39.370 ops/s
+# Warmup Iteration   3: 41.616 ops/s
+# Warmup Iteration   4: 39.740 ops/s
+# Warmup Iteration   5: 41.720 ops/s
+Iteration   1: 42.175 ops/s
+Iteration   2: 39.960 ops/s
+Iteration   3: 40.425 ops/s
+Iteration   4: 41.698 ops/s
+Iteration   5: 40.300 ops/s
+
+
+Result "jmhTest.MyBenchmarkStringLineNumber.call3StringBuffer":
+  84.167 Å}(99.9%) 69.604 ops/s [Average]
+  (min, avg, max) = (39.960, 84.167, 140.857), stdev = 46.039
+  CI (99.9%): [14.562, 153.771] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 10, VM 10+46
+# VM invoker: C:\Program Files\Java\latest\bin\java.exe
+# VM options: -XX:-CompactStrings -DCompactStringEnabled=false
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jmhTest.MyBenchmarkStringLineNumber.call4StringBuilder
+
+# Run progress: 75.00% complete, ETA 00:00:21
+# Fork: 1 of 2
+# Warmup Iteration   1: 104.799 ops/s
+# Warmup Iteration   2: 153.348 ops/s
+# Warmup Iteration   3: 171.624 ops/s
+# Warmup Iteration   4: 169.360 ops/s
+# Warmup Iteration   5: 170.846 ops/s
+Iteration   1: 147.473 ops/s
+Iteration   2: 165.500 ops/s
+Iteration   3: 151.334 ops/s
+Iteration   4: 162.699 ops/s
+Iteration   5: 169.284 ops/s
+
+# Run progress: 87.50% complete, ETA 00:00:10
+# Fork: 2 of 2
+# Warmup Iteration   1: 108.653 ops/s
+# Warmup Iteration   2: 168.247 ops/s
+# Warmup Iteration   3: 168.066 ops/s
+# Warmup Iteration   4: 167.446 ops/s
+# Warmup Iteration   5: 167.480 ops/s
+Iteration   1: 160.276 ops/s
+Iteration   2: 167.450 ops/s
+Iteration   3: 164.420 ops/s
+Iteration   4: 148.860 ops/s
+Iteration   5: 135.911 ops/s
+
+
+Result "jmhTest.MyBenchmarkStringLineNumber.call4StringBuilder":
+  157.321 Å}(99.9%) 16.434 ops/s [Average]
+  (min, avg, max) = (135.911, 157.321, 169.284), stdev = 10.870
+  CI (99.9%): [140.886, 173.755] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:24
+
+Benchmark                                                Mode  Cnt    Score    Error  Units
+jmhTest.MyBenchmarkStringLineNumber.call1StringLine     thrpt   10  213.186 Å} 21.686  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call2StringConcat   thrpt   10  106.186 Å}  3.196  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call3StringBuffer   thrpt   10   84.167 Å} 69.604  ops/s
+jmhTest.MyBenchmarkStringLineNumber.call4StringBuilder  thrpt   10  157.321 Å} 16.434  ops/s
