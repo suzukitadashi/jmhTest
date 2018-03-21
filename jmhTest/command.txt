@@ -1,5 +1,5 @@
 rmdir "C:\Program Files\Java\latest"
-mklink /D "C:\Program Files\Java\latest" "C:\Program Files\Java\jdk1.8.0_162"
+mklink /D "C:\Program Files\Java\latest" "C:\Program Files\Java\jdk1.8.0_144"
 
 java -version
 
@@ -12,7 +12,7 @@ java -classpath target/benchmarks.jar jmhTest.MyBenchmarkStringLineNumber  > C:\
 java -classpath target/benchmarks.jar jmhTest.MyBenchmarkStringLineZenkaku > C:\Users\‚½‚¾‚µ\Documents\GitHub\jmhTest\jmhTest\MyBenchmarkStringLineZenkakuJava8Result_20170923.txt
 
 rmdir "C:\Program Files\Java\latest"
-mklink /D "C:\Program Files\Java\latest" "C:\Program Files\Java\jdk-9.0.4"
+mklink /D "C:\Program Files\Java\latest" "C:\Program Files\Java\jdk-9"
 
 java -version
 
